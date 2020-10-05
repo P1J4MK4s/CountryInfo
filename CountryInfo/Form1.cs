@@ -27,7 +27,7 @@ namespace CountryInfo
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            //await LoadCountry();
+            await LoadCountry();
         }
 
         private void button2_Click(object sender, EventArgs e)

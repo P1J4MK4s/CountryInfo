@@ -91,6 +91,7 @@
             this.countriesBindingNavigator.BindingSource = this.countriesBindingSource;
             this.countriesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.countriesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.countriesBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.countriesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -110,8 +111,9 @@
             this.countriesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.countriesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.countriesBindingNavigator.Name = "countriesBindingNavigator";
+            this.countriesBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.countriesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.countriesBindingNavigator.Size = new System.Drawing.Size(834, 25);
+            this.countriesBindingNavigator.Size = new System.Drawing.Size(1251, 38);
             this.countriesBindingNavigator.TabIndex = 0;
             this.countriesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -121,13 +123,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(65, 33);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -137,7 +139,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -146,7 +148,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -155,27 +157,28 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 38);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(73, 31);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 38);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -183,7 +186,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -192,20 +195,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 33);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 38);
             // 
             // countriesBindingNavigatorSaveItem
             // 
             this.countriesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.countriesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("countriesBindingNavigatorSaveItem.Image")));
             this.countriesBindingNavigatorSaveItem.Name = "countriesBindingNavigatorSaveItem";
-            this.countriesBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.countriesBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 33);
             this.countriesBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.countriesBindingNavigatorSaveItem.Click += new System.EventHandler(this.countriesBindingNavigatorSaveItem_Click);
             // 
@@ -214,9 +217,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(330, 45);
+            this.label1.Location = new System.Drawing.Point(495, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 29);
+            this.label1.Size = new System.Drawing.Size(226, 40);
             this.label1.TabIndex = 2;
             this.label1.Text = "All countries";
             // 
@@ -226,9 +230,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(721, 43);
+            this.button1.Location = new System.Drawing.Point(1082, 66);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 31);
+            this.button1.Size = new System.Drawing.Size(140, 48);
             this.button1.TabIndex = 3;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -244,53 +249,68 @@
             this.Area,
             this.Population,
             this.Region_name});
-            this.dataGridView1.Location = new System.Drawing.Point(129, 117);
+            this.dataGridView1.Location = new System.Drawing.Point(194, 180);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(640, 237);
+            this.dataGridView1.Size = new System.Drawing.Size(960, 365);
             this.dataGridView1.TabIndex = 4;
             // 
             // Country_name
             // 
             this.Country_name.HeaderText = "Название";
+            this.Country_name.MinimumWidth = 8;
             this.Country_name.Name = "Country_name";
+            this.Country_name.Width = 150;
             // 
             // Country_code
             // 
             this.Country_code.HeaderText = "Код страны";
+            this.Country_code.MinimumWidth = 8;
             this.Country_code.Name = "Country_code";
+            this.Country_code.Width = 150;
             // 
             // City_name
             // 
             this.City_name.HeaderText = "Столица";
+            this.City_name.MinimumWidth = 8;
             this.City_name.Name = "City_name";
+            this.City_name.Width = 150;
             // 
             // Area
             // 
             this.Area.HeaderText = "Площадь";
+            this.Area.MinimumWidth = 8;
             this.Area.Name = "Area";
+            this.Area.Width = 150;
             // 
             // Population
             // 
             this.Population.HeaderText = "Население";
+            this.Population.MinimumWidth = 8;
             this.Population.Name = "Population";
+            this.Population.Width = 150;
             // 
             // Region_name
             // 
             this.Region_name.HeaderText = "Регион";
+            this.Region_name.MinimumWidth = 8;
             this.Region_name.Name = "Region_name";
+            this.Region_name.Width = 150;
             // 
             // AllCountries
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CountryInfo.Properties.Resources._755441934660016;
-            this.ClientSize = new System.Drawing.Size(834, 470);
+            this.ClientSize = new System.Drawing.Size(1251, 723);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.countriesBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AllCountries";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AllCountries";
